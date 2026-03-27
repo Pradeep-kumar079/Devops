@@ -1,0 +1,59 @@
+/* Section */
+.product-section {
+  padding: 50px 70px;
+  background: #fafafa;
+}
+
+/* Heading */
+.product-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+/* ⭐ Laptop */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-section {
+    padding: 40px;
+  }
+}
+
+/* ⭐ Tablet */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product-section {
+    padding: 30px;
+  }
+}
+
+/* ⭐ Mobile */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .product-section {
+    padding: 20px;
+  }
+
+  .product-heading {
+    font-size: 22px;
+  }
+}

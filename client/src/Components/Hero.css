@@ -1,0 +1,109 @@
+.hero {
+  padding: 40px 60px;
+  background: #f7f7f7;
+}
+
+/* Card Container */
+
+.hero-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LEFT SIDE */
+
+.hero-left {
+  max-width: 50%;
+}
+
+.hero-tag {
+  color: #ff3f6c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-desc {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  padding: 12px 26px;
+  background: #ff3f6c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #e7335e;
+}
+
+/* RIGHT IMAGE */
+
+.hero-right img {
+  width: 420px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ⭐ Responsive Tablet */
+
+@media (max-width: 900px) {
+
+  .hero-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-right img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+}
+
+/* ⭐ Responsive Mobile */
+
+@media (max-width: 500px) {
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-card {
+    padding: 25px;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+}
